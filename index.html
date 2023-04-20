@@ -1,0 +1,62 @@
+<html>
+<head>
+        <title>My Web Page</title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+   <body>
+     <div id= 'div1'>
+      <div class="innerdiv">
+         <div class="logo">
+           <img src="./Image.jpg" alt="" />
+         </div>
+         <div class="image"></div>
+         <div class="text">
+           Join Rewards Program to become a valued member and earn more points !!!<br />
+          
+         </div>
+       </div>
+     </div>
+     <div id = 'div2'>
+          <form name = "myform"  onsubmit="return validatefields()" method = "get" action = "message.html" class="f1">
+
+               <h2>New Member Registration</h2>
+                  <label for="username">UserName:</label>
+                  <input type="text" name="username" id="uname" required/><br/>
+                  <div id="username_error" class="error"></div>
+
+                  <label for="pwd">Password:</label>
+                  <input type="password" name="pwd" id="pass"/><br/>
+                  <div id="password_error" class="error"></div>
+
+                  <label for="pwd1">Confirm Password:</label>
+                  <input type="password"  name="pwd1" id="cpass"/><br/>
+                  <!--<div id="cpassword_error" class="error"></div>-->
+
+                  <label for="dob" >Date of Birth:</label>
+                  <input type="date" name="mydate" id="dob"/><br/></label>
+
+                  <label for="email">Email:</label>
+                  <input type="email" name="email"  id="email" /><br/>
+                  <label for= "number">Mobile Number:</label>
+                  <input type="number" name="mobile" id="mob"></label></br>
+                  <label for="Country">Country:</label>
+                                <select name="Country" id="ctry">
+                                    <option value="select">Select Country</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="United States">United States</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Yemen">Yemen</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Japan">Japan</option>
+									                  <option value="India">India</option>
+									                  <option value="Dubai">Dubai</option>
+									                  <option value="Saudi">Saudi</option>
+                                </select><br/><br/>                
+                  <input type="submit" name="submit" value="Register">
+          </form>
+     </div>
+     <script src="main.js"></script>
+</body>
+</html>
+
